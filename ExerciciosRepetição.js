@@ -32,8 +32,8 @@ for (let i = 0; i <=50; i++) {
 }*/
 
 
-// 3 COntagem regressiva
-let tempo = 15;
+// 3 Contagem regressiva
+/*let tempo = 15;
 console.log("Começando contagem regressiva...");
 
 while (tempo > 0) {
@@ -42,4 +42,4 @@ while (tempo > 0) {
     tempo--
 }
 console.log("Feliz Natal!!");
-
+*/
