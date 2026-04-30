@@ -65,7 +65,7 @@ console.log("Feliz Natal!!");
 //Exercicios Condicionais
 
 // 1 - Verificar maioridade:
-const idade = Number(prompt("Digite sua idade:"))
+/*const idade = Number(prompt("Digite sua idade:"))
 if (idade >=18) {
     console.log ("Maior de idade")
 } else {
@@ -151,4 +151,18 @@ if (num1 > num2 && num1 > num3) {
     alert("O maior numero é: "+ num2);    
 } else {
     alert("O maior numero é: " + num3);
+}*/
+
+//Soma dos dígitos
+let numero = Number(prompt("Digite um número inteiro:"));
+
+let soma = 0;
+
+while (numero > 0) {
+    let digito = numero % 10;
+    soma += digito;
+
+    numero = Math.floor(numero/10);
 }
+
+console.log("Soma dos dígitos:", soma)
