@@ -401,14 +401,86 @@ do {
 
 // Exercícios Map, Find, Filter e Reduce
 
-// Questão 1
-const notas = [4, 7, 9, 3, 10, 5];
+//exercicio 1 , Filter
 
-const notasAprovadas = notas.filter((n) => n >= 7) 
-console.log(notasAprovadas);
+const notas = [4,7,9,3,10,5];
+const notasAprovadas = notas.filter((nota => nota >= 7),
+    
+)
+console.log(notasAprovadas)
 
-// Questão 2
+//Exercicio 2 , Filter
+
 const palavras = ["sol", "mar", "computador", "lua", "código"];
+const palavtras = palavras.filter((palavra => palavra.length >= 4),
+    
+)
+console.log(palavtras)
 
-const maiores = palavras.filter(p => p.length >4);
-console.log (maiores)
+// Exercicio 3 , Filter
+
+const animais = ["gato", "cachorro", "peixe", "elefante", "abelha"];
+const animaisComc = animais.filter((animal => animal[0] === "c"));
+console.log(animaisComc);
+
+
+
+
+
+//Exercicio 1 Find
+const filmes = ["Avatar", "Batman", "Vingadores", "Matrix", "Barbie"];
+const filmeComB = filmes.find((filme => filme[0] === "B"
+));
+console.log(filmeComB);
+
+//exercicio 2 find
+
+const numeros = [2, 4, 6, 9, 12, 15];
+const numeroImpar = numeros.find((numero => numero % 2 !== 0));
+console.log(numeroImpar);
+
+//exercicio 3 find 
+
+const alunos = [{nome: "Ana", nota: 8}, {nome: "Carlos", nota: 5}, {nome: "Beatriz", nota: 9}];
+const alunoAprovado = alunos.find((aluno => aluno.nota >= 7));
+console.log(alunoAprovado);
+
+
+
+
+
+// Exercicio 1 Map
+
+const temperaturas = [20,25,30,15];
+const temperaturasFahrenheit = temperaturas.map((temp => temp * 1.8 + 32));
+console.log(temperaturasFahrenheit);
+
+//Exercicio 2 Map
+const produtos =["camisa","calça","Sapato"];
+const produtosCompreco = produtos.map((produto =>{
+    return "Produto:"+ produto.toLocaleUpperCase();
+}));
+console.log(produtosCompreco);
+
+// Exercicio 3 Map
+const numeros =[1,2,3,4];
+const numerosQuadrado = numeros.map((numero => numero * numero));
+console.log(numerosQuadrado);
+
+
+
+
+// Exercicio 1 Reduce
+const valores = [100, 200, 50, 150];
+const valorTotal = valores.reduce((acc, valor)=> acc + valor, 0);
+console.log(valorTotal);
+
+// Exercicio 2 Reduce
+const palavras = ["JS", "é", "muito", "legal"];
+const frase = palavras.reduce((acc, palavra)=> acc + ""+ palavra);
+console.log(frase);
+
+//Exercicio 3 reduce
+const numeros = [1, 2, 3, 4, 5];
+const soma = numeros.reduce((acc , numero)=> acc + numero, 0);
+console.log(soma);
